@@ -2,7 +2,7 @@
 
 ### IN DEVELOPMENT.
 
-Built on <Animated> using useNativeDriver=true, runs on 60fps, so it's smooth af, comparing to regular Animated.
+Built on `<Animated>` using `useNativeDriver=true`, runs on 60fps, so it's smooth af, comparing to regular Animated.
 Works, but has funky boilerplate (I'm working on it). Check out the example (gif is only 25fps).
 
 ![alt text](https://raw.githubusercontent.com/logovaser/animated-header-scroll-view/master/readme/demo.gif)
