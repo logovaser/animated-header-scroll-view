@@ -1,0 +1,8 @@
+.expo/
+.idea/
+.tmp/
+npm-debug.*
+.gradle/
+node_modules
+readme/
+.npmignore
