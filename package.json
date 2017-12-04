@@ -1,0 +1,24 @@
+{
+  "name": "react-native-animated-header-scroll-view",
+  "description": "",
+  "version": "0.0.0",
+  "private": false,
+  "author": "Artem Prudnikov",
+  "homepage": "",
+  "contributors": [ "Artem Prudnikov <logovaser@gmail.com> (https://github.com/logovaser)" ],
+  "dependencies": {},
+  "devDependencies": {
+    "react": "^16.0.0-beta.5",
+    "react-native": "^0.49.5"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0-beta.5",
+    "react-native": "^0.49.5"
+  },
+  "keywords": [],
+  "repository": "",
+  "licenses": [{
+    "type": "WTFPL",
+    "url": "http://www.wtfpl.net/"
+  }]
+}
