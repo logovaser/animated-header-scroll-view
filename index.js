@@ -4,7 +4,7 @@ import {Animated, ScrollView, StyleSheet, View} from 'react-native';
 
 const HEADER_MIN_HEIGHT = 60;
 const HEADER_MAX_HEIGHT = 160;
-const CONTROLS_HEIGHT = 60;
+const ROOT_CHILDREN_HEIGHT = 60;
 
 export default class AnimatedHeaderScrollView extends React.Component {
 
@@ -18,6 +18,7 @@ export default class AnimatedHeaderScrollView extends React.Component {
         this.conf = {
             headerMaxHeight: this.props.headerMaxHeight || HEADER_MAX_HEIGHT,
             headerMinHeight: this.props.headerMinHeight || HEADER_MIN_HEIGHT,
+            rootChildrenHeight: this.props.rootChildrenHeight || ROOT_CHILDREN_HEIGHT,
         };
         this.conf.headerScrollDistance = this.conf.headerMaxHeight - this.conf.headerMinHeight;
 
@@ -30,8 +31,8 @@ export default class AnimatedHeaderScrollView extends React.Component {
         this.controlsY = scrollY.interpolate({
             inputRange: [0, this.conf.headerScrollDistance],
             outputRange: [
-                this.conf.headerMaxHeight - CONTROLS_HEIGHT / 2,
-                this.conf.headerMinHeight - CONTROLS_HEIGHT / 2
+                this.conf.headerMaxHeight - this.conf.rootChildrenHeight / 2,
+                this.conf.headerMinHeight - this.conf.rootChildrenHeight / 2
             ],
             extrapolate: 'clamp',
         });
